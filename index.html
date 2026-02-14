@@ -23,23 +23,31 @@
 </head>
 <body>
     <!-- Header Area Design -->
-     <header class="header">
-        <div class="">
-            <div class="header-area container items-center justify-center">
-                <div class="logo">
-                    <img src="./images/logo.png" alt="">
-                </div>
-                <nav class="menu">
-                    <ul class="nav-links flex justify-end gap-6 items-center">
-                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Home</a></li>
-                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Services</a></li>
-                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">About Us</a></li>
-                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-     </header>
+     <header>
+        <nav class="navbar container mx-auto">
+            <!-- logo (always visible) -->
+            <a href="#" class="logo" aria-label="Brand home">
+            <i class="fas fa-cube"></i>
+            <span>studio</span>
+            </a>
+
+            <!-- hidden checkbox controls the menu -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <!-- hamburger label (linked to checkbox) -->
+            <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
+            <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- navigation links -->
+            <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" class="cta-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
      <!-- Banner Section Design -->
       <div class="swiper mySwiper">
         <div class="wrapper swiper-wrapper">
@@ -118,6 +126,47 @@
                 </div>
              </div>
         </section>
+
+        <!-- Contact us section -->
+         <section class="my-[50px]">
+              <div class="contact-us container mx-auto">
+                <div class="service-cont text-center mb-[30px]">
+                    <h1 class="text-[45px] text-cyan-500 font-bold">Contact Us</h1>
+                </div>
+                <div class="bg-cyan-500 p-[60px] rounded-md grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="contact-us-left flex items-center">
+                        <div class="contact-us-left-cont text-white z-50 p-[40px]">
+                            <div>
+                                <div class="flex gap-5 items-center">
+                                    <div><i class="fa-solid fa-location-dot text-4xl"></i></div>
+                                    <p class="text-[18px] font-semibold">292 Inner Circular Road, Shatabdi Center, Room#F5 (1st Fl.) Fakirapool, Motijheel, Dhaka-1000. Bangladesh</p>
+                                </div>
+                                <!-- <li><i class="fa-solid fa-globe"></i> futureeventsbd.com</li>
+                                <li><i class="fa-solid fa-phone-volume"></i> 01715-853909</li>
+                                <li><i class="fa-solid fa-envelope"></i> future.exhibitions@yahoo.com</li> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-us-right bg-white p-[30px] rounded-md">
+                        <form action="#">
+                            <div class="fName mb-3">
+                                <label for="#" class="text-[18px] text-[#777777] mb-2">Full Name</label>
+                                <input type="text" name="" id="" placeholder="Full Name" class="w-full px-3 py-5 outline-none rounded-md border border-gray-500">
+                            </div>
+                            <div class="email mb-3">
+                                <label for="#" class="text-[18px] text-[#777777] mb-2">Enter Email</label>
+                                <input type="email" name="" id="" placeholder="Enter Your Email" class="w-full px-3 py-5 outline-none rounded-md border border-gray-500">
+                            </div>
+                            <div class="message mb-3">
+                                <label for="#" class="text-[18px] text-[#777777] mb-2">Message</label>
+                                <textarea name="" rows="6" id="" class="w-full px-3 py-5 outline-none rounded-md border border-gray-500"></textarea>
+                            </div>
+                            <button class="px-5 py-3 bg-cyan-500 rounded-md text-white font-semibold"><a href="#">Send Message</a></button>
+                        </form>
+                    </div>
+                </div>
+              </div>
+         </section>
 
         <!-- Footer Section Section -->
          <footer class="bg-cyan-500 py-[40px] px-[40px]">

@@ -18,6 +18,192 @@
     grid-template-columns: 200px 1fr;
 }
 
+/* ============== Navbar style =================== */
+
+/* header & navigation container */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 2rem;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    /* logo block — keeps text + icon together */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: #1a2b4c;
+      text-decoration: none;
+      padding: 0.4rem 0;
+    }
+
+    .logo i {
+      font-size: 2rem;
+      color: #3a6ea5;
+      background: #e9f0f9;
+      padding: 0.3rem;
+      border-radius: 14px;
+    }
+
+    .logo span {
+      background: linear-gradient(145deg, #1e3a5f, #2b4c7c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* hide checkbox – toggle mechanism */
+    #menu-toggle {
+      display: none;
+    }
+
+    /* hamburger icon (visible only on mobile) */
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      color: #1e3a5f;
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: color 0.2s;
+      z-index: 10;
+    }
+
+    .hamburger:hover {
+      color: #3a6ea5;
+    }
+
+    /* menu list */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+      transition: all 0.25s ease;
+    }
+
+    .nav-menu li a {
+      text-decoration: none;
+      font-weight: 520;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      padding: 0.5rem 0.2rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .nav-menu li a:hover {
+      color: #1e4a7a;
+      border-bottom-color: #3a6ea5;
+    }
+
+    /* optional button style for last item (call to action) */
+    .nav-menu li:last-child a {
+      background: #1e3a5f;
+      color: white;
+      padding: 0.5rem 1.4rem;
+      border-radius: 40px;
+      border-bottom: none;
+      box-shadow: 0 4px 8px rgba(0, 40, 80, 0.15);
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .nav-menu li:last-child a:hover {
+      background: #2b4f7c;
+      border-bottom: none;
+      transform: scale(1.02);
+    }
+
+    /* desktop adjustments */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0.7rem 1.5rem;
+        align-items: center;
+      }
+
+      /* show hamburger, hide regular menu by default */
+      .hamburger {
+        display: block;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 1.8rem 1.5rem 2rem 1.5rem;
+        gap: 1.5rem;
+        box-shadow: 0 20px 25px -10px rgba(0,0,0,0.1);
+        border-radius: 0 0 24px 24px;
+        align-items: flex-start;
+        transform: translateY(-150%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 5;
+        border-top: 1px solid #eef2f6;
+      }
+
+      /* when checkbox is checked, show menu */
+      #menu-toggle:checked ~ .nav-menu {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      /* optional small animation for hamburger icon when menu open */
+      #menu-toggle:checked + .hamburger i::before {
+        content: "\f00d";  /* FontAwesome 'x' mark */
+      }
+
+      /* reset pseudo element trick: ensure the icon behaves */
+      .hamburger i::before {
+        content: "\f0c9";  /* bars */
+      }
+
+      /* adjust menu items for mobile */
+      .nav-menu li {
+        width: 100%;
+      }
+
+      .nav-menu li a {
+        display: block;
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 0.5rem 0;
+      }
+
+      .nav-menu li:last-child a {
+        width: auto;
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.7rem 2rem;
+      }
+    }
+
+    /* tiny screens (optional extra polish) */
+    @media (max-width: 420px) {
+      .logo span {
+        font-size: 1.4rem;
+      }
+      .logo i {
+        font-size: 1.7rem;
+      }
+      .navbar {
+        padding: 0.6rem 1rem;
+      }
+    }
+
+/* ============== Navbar style =================== */
+
 /* ======== Slide Section Style ================ */
 .wrapper{
     position: relative;
@@ -71,6 +257,25 @@
 .service-items img{
     min-height: 400px;
     object-fit: cover;
+}
+
+/* ============ Contact us style ================== */
+.contact-us-left{
+    background-image: url("../images/contact-us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.contact-us-left::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 8px;
 }
 
 /* =========== Footer area style ============ */

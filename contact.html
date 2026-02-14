@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsive · logo menu</title>
+  <!-- Font Awesome 6 (free) for the hamburger icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <!-- logo (always visible) -->
+    <a href="#" class="logo" aria-label="Brand home">
+      <i class="fas fa-cube"></i>
+      <span>studio</span>
+    </a>
+
+    <!-- hidden checkbox controls the menu -->
+    <input type="checkbox" id="menu-toggle">
+    
+    <!-- hamburger label (linked to checkbox) -->
+    <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- navigation links -->
+    <ul class="nav-menu">
+      <li><a href="#">work</a></li>
+      <li><a href="#">journal</a></li>
+      <li><a href="#">insights</a></li>
+      <li><a href="#">connect</a></li>
+      <li><a href="#" class="cta-link">start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>
