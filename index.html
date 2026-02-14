@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Events Management</title>
+    <!-- Tailwind Css -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Font awesome Icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Link Swiper's CSS -->
+         <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+        <!-- Style sheets -->
+         <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header Area Design -->
+     <header class="header">
+        <div class="">
+            <div class="header-area container items-center justify-center">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <nav class="menu">
+                    <ul class="nav-links flex justify-end gap-6 items-center">
+                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Home</a></li>
+                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Services</a></li>
+                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">About Us</a></li>
+                        <li class="nav-item"><a href="#" class="text-[18px] font-semibold text-[#ffffff]">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+     <!-- Banner Section Design -->
+      <div class="swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="./images/banner1.jpg" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="./images/banner2.jpg" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="./images/banner3.jpg" alt="" class="image">
+            </div>
+            <div class="slide swiper-slide">
+                <img src="./images/banner4.jpg" alt="" class="image">
+            </div>
+        </div>
+        <div class="swiper-button-next slide-btn"></div>
+        <div class="swiper-button-prev slide-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- About Us Section -->
+       <section class="container mx-auto my-[80px]">
+        <h1 class="text-[45px] text-center font-bold mb-[30px] text-cyan-500">About Us</h1>
+        <div class="about-us grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="about-us-left flex justify-center items-center">
+                <div>
+                    <h1 class="text-[45px] font-bold text-cyan-500 mb-5">Future Events & Exhibitions (pvt) Ltd.</h1>
+                <ul class="space-y-[30px]">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima architecto sunt illum unde perferendis iure veniam inventore, quos incidunt accusantium vel magni molestiae soluta!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima architecto sunt illum unde perferendis iure veniam inventore, quos incidunt accusantium vel magni molestiae soluta!</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minima architecto sunt illum unde perferendis iure veniam inventore, quos incidunt accusantium vel magni molestiae soluta!</li>
+                </ul>
+                <button class="bg-cyan-500 py-[10px] px-[20px] rounded-md text-white mt-[25px]">Read More</button>
+                </div>
+            </div>
+            <div class="about-us-right">
+                <div class="about-img">
+                    <img src="./images/banner1.jpg" alt="" class="rounded-2xl">
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- Our Services Section -->
+        <section class="container mx-auto my-[80px]">
+            <div class="service-cont text-center space-y-[20px]">
+                <h1 class="text-[45px] text-cyan-500 font-bold">Our Services</h1>
+                <p class="text-[#777777]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa saepe sequi, doloribus vero dolorem expedita dolor ducimus, libero exercitationem, laudantium ipsum? Nam aperiam quis sint molestiae? Voluptate eligendi aut quis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa saepe sequi, doloribus vero dolorem expedita dolor ducimus, libero exercitationem, laudantium ipsum? Nam aperiam quis sint molestiae? Voluptate eligendi aut quis.</p>
+            </div>
+            <!-- service cards -->
+             <div class="services grid grid-cols-1 md:grid-cols-4 gap-8 my-[40px]">
+                <div class="service-items relative">
+                    <img src="./images/banner1.jpg" alt="" class="rounded-md">
+                    <div class="service-text rounded-md absolute bottom-0 w-full h-[70px] bg-cyan-600 flex justify-center items-center">
+                        <p class="text-center text-xl text-white">Exhibition & Event Management</p>
+                    </div>
+                </div>
+                <div class="service-items relative">
+                    <img src="./images/banner2.jpg" alt="" class="rounded-md">
+                    <div class="service-text rounded-md absolute bottom-0 w-full h-[70px] bg-cyan-600 flex justify-center items-center">
+                        <p class="text-center text-xl text-white">Conference & Seminar Arrangement</p>
+                    </div>
+                </div>
+                <div class="service-items relative">
+                    <img src="./images/banner3.jpg" alt="" class="rounded-md">
+                    <div class="service-text rounded-md absolute bottom-0 w-full h-[70px] bg-cyan-600 flex justify-center items-center">
+                        <p class="text-center text-xl text-white">Interior Design & Booth Fabrication</p>
+                    </div>
+                </div>
+                <div class="service-items relative">
+                    <img src="./images/banner4.jpg" alt="" class="rounded-md">
+                    <div class="service-text rounded-md absolute bottom-0 w-full h-[70px] bg-cyan-600 flex justify-center items-center">
+                        <p class="text-center text-xl text-white">Exhibition Logistic Supply</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Footer Section Section -->
+         <footer class="bg-cyan-500 py-[40px] px-[40px]">
+            <div class="footer-area container mx-auto">
+                <div class="footer-items grid grid-cols-1 md:grid-cols-4 gap-[30px]">
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Future Events & Exhibitions Pvt. Ltd.</h3>
+                    <ul class="ml-3">
+                        <li><i class="fa-solid fa-location-dot"></i> 292 Inner Circular Road, Shatabdi Center, Room#F5 (1st Fl.) Fakirapool, Motijheel, Dhaka-1000. Bangladesh</li>
+                        <li><i class="fa-solid fa-globe"></i> futureeventsbd.com</li>
+                        <li><i class="fa-solid fa-phone-volume"></i> 01715-853909</li>
+                        <li><i class="fa-solid fa-envelope"></i> future.exhibitions@yahoo.com</li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Our Services</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Exhibition & Event Management</a></li>
+                        <li><a href="#">Conference & Seminar Arrangement</a></li>
+                        <li><a href="#">Interior Design & Booth Fabrication</a></li>
+                        <li><a href="#">Exhibition Logistic Supply</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Footer Menu</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Social Links</h3>
+                    <ul class="social-link flex gap-4">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+         </footer>
+
+      <!-- Swiper JS -->
+       <script src="./js/swiper-bundle.js"></script>
+        <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

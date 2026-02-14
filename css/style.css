@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+.header{
+    background-color: #0049b7;
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.header-area{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+/* ======== Slide Section Style ================ */
+.wrapper{
+    position: relative;
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.wrapper,
+.slide{
+    width: 100%;
+    height: 85vh;
+}
+.slide .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-btn{
+    color: #ffffff;
+    font-size: 10px;
+}
+.slide-btn:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next{
+    margin-right: 50px!important;
+}
+.swiper-button-prev{
+    margin-left: 50px!important;
+}
+
+/* ======= About us section style ============== */
+
+.about-us-right .about-img{
+    width: 100%;
+    height: 100%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ============ Service area style ============ */
+
+.service-items img{
+    min-height: 400px;
+    object-fit: cover;
+}
+
+/* =========== Footer area style ============ */
+.footer-cont .social-link li a{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff50;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.footer-cont .social-link li a i{
+    font-size: 25px;
+}
