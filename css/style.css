@@ -18,6 +18,28 @@
     grid-template-columns: 200px 1fr;
 }
 
+
+/* =============== Team Section Style =================== */
+
+ /* keep the exact blob shape and hover from previous version */
+    .blob-image {
+      border-radius: 30% 70% 70% 30% / 30% 35% 65% 70%;
+      transition: border-radius 0.3s ease;
+    }
+    .group:hover .blob-image {
+      border-radius: 40% 60% 60% 40% / 40% 45% 55% 60%;
+    }
+    /* subtle card hover effect */
+    .hover-card {
+      transition: transform 0.25s ease, box-shadow 0.3s ease;
+    }
+    .hover-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 45px -12px rgba(18, 52, 77, 0.25), 0 0 0 1px rgba(255,255,255,0.9);
+    }
+
+/* =============== Team Section Style =================== */
+
 /* ============== Navbar style =================== */
 
 /* header & navigation container */
@@ -45,8 +67,9 @@
       padding: 0.4rem 0;
     }
 
-    .logo i {
-      font-size: 2rem;
+    .logo img {
+      width: 100px;
+      height: 60px;
       color: #3a6ea5;
       background: #e9f0f9;
       padding: 0.3rem;

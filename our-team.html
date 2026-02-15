@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Events Management</title>
+    <!-- Tailwind Css -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Font awesome Icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Link Swiper's CSS -->
+         <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+        <!-- Style sheets -->
+         <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header Area Design -->
+     <header>
+        <nav class="navbar container mx-auto">
+            <!-- logo (always visible) -->
+            <a href="#" class="logo" aria-label="Brand home">
+            <img src="./images/logo.png" alt="">
+            </a>
+
+            <!-- hidden checkbox controls the menu -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <!-- hamburger label (linked to checkbox) -->
+            <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
+            <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- navigation links -->
+            <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="contact.html" class="cta-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!-- main container - same max-width as previous -->
+      <main class="my-16">
+        <div class="max-w-7xl w-full mx-auto">
+    
+    <!-- section title (exact gradient and style) -->
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-4xl md:text-5xl font-semibold bg-gradient-to-r from-[#1e2b3a] to-[#2c3e50] bg-clip-text text-transparent tracking-tight">Meet Our Team</h2>
+      <p class="text-[#5b6f82] text-lg mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores esse beatae? Ad nostrum eum laudantium consequatur, veniam beatae asperiores harum aliquam ducimus dolore tenetur pariatur eos distinctio suscipit illo, nobis voluptatum perferendis a doloremque dicta saepe cum quaerat ratione.</p>
+    </div>
+
+    <!-- 4 column grid for large screens, exactly as previous: 4 cols on lg, 3 on md, 2 on sm, 1 on xs -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+      
+      <!-- Team Member 1 - Lina Chen (exact previous styling) -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <!-- image blob container -->
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lina Chen" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <!-- name -->
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">Lina Chen</h3>
+        <!-- designation pill -->
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">lead designer</span>
+        <!-- social links: exactly facebook, linkedin, twitter -->
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Team Member 2 - Marcus Velez -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus Velez" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">Marcus Velez</h3>
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">product engineer</span>
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Team Member 3 - Priya Kapoor -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Kapoor" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">Priya Kapoor</h3>
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">brand strategist</span>
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Team Member 4 - James Okafor -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="James Okafor" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">James Okafor</h3>
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">tech lead</span>
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Team Member 5 - Sofia Rios (extra to show wrapping, but keeps 4 col layout) -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Sofia Rios" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">Sofia Rios</h3>
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">UX researcher</span>
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Team Member 6 - Dmitri Volkov -->
+      <div class="bg-white/75 backdrop-blur-sm rounded-[32px] p-6 md:p-7 flex flex-col items-center text-center border border-white/50 shadow-xl hover-card group"
+           style="box-shadow: 0 20px 35px -8px rgba(0, 20, 30, 0.15);">
+        <div class="w-32 h-32 md:w-36 md:h-36 p-1 mb-5 bg-gradient-to-b from-[#d9e2ef] to-[#cbd5e1] blob-image shadow-[0_15px_25px_-10px_rgba(0,40,60,0.2)]">
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dmitri Volkov" class="w-full h-full object-cover blob-image border-2 border-white/80">
+        </div>
+        <h3 class="text-xl md:text-2xl font-semibold text-[#1f2a3f] mb-1">Dmitri Volkov</h3>
+        <span class="text-sm md:text-base font-medium text-[#60758b] bg-[#e6f0ff]/70 backdrop-blur-sm px-5 py-1.5 rounded-full mb-5 border border-white/60">motion designer</span>
+        <div class="flex gap-4 mt-1">
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1877f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#0a66c2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-11 h-11 rounded-2xl bg-white/80 flex items-center justify-center text-[#2b3f5c] text-xl shadow-md hover:bg-white hover:text-[#1da1f2] hover:scale-105 transition-all duration-200 border border-white/80"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+      </main>
+
+        <!-- Footer Section Section -->
+         <footer class="bg-cyan-500 py-[40px] px-[40px]">
+            <div class="footer-area container mx-auto">
+                <div class="footer-items grid grid-cols-1 md:grid-cols-4 gap-[30px]">
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Future Events & Exhibitions Pvt. Ltd.</h3>
+                    <ul class="ml-3">
+                        <li><i class="fa-solid fa-location-dot"></i> 292 Inner Circular Road, Shatabdi Center, Room#F5 (1st Fl.) Fakirapool, Motijheel, Dhaka-1000. Bangladesh</li>
+                        <li><i class="fa-solid fa-globe"></i> futureeventsbd.com</li>
+                        <li><i class="fa-solid fa-phone-volume"></i> 01715-853909</li>
+                        <li><i class="fa-solid fa-envelope"></i> future.exhibitions@yahoo.com</li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Our Services</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Exhibition & Event Management</a></li>
+                        <li><a href="#">Conference & Seminar Arrangement</a></li>
+                        <li><a href="#">Interior Design & Booth Fabrication</a></li>
+                        <li><a href="#">Exhibition Logistic Supply</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Footer Menu</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Social Links</h3>
+                    <ul class="social-link flex gap-4">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+         </footer>
+
+      <!-- Swiper JS -->
+       <script src="./js/swiper-bundle.js"></script>
+        <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
