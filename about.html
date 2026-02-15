@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Events Management</title>
+    <!-- Tailwind Css -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- Font awesome Icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Link Swiper's CSS -->
+         <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+        <!-- Style sheets -->
+         <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header Area Design -->
+     <header>
+        <nav class="navbar container mx-auto">
+            <!-- logo (always visible) -->
+            <a href="#" class="logo" aria-label="Brand home">
+            <img src="./images/logo.png" alt="">
+            </a>
+
+            <!-- hidden checkbox controls the menu -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <!-- hamburger label (linked to checkbox) -->
+            <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
+            <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- navigation links -->
+            <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="contact.html" class="cta-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- 1. Hero section with background image and page name -->
+  <section class="relative h-80 md:h-96 lg:h-[30rem] bg-cover bg-center flex items-center justify-center" 
+    style="background-image: url('https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <!-- Dark overlay to make text pop -->
+    <div class="absolute inset-0 bg-black/40"></div>
+    
+    <!-- Page name text (centered, bold, white) -->
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-wide drop-shadow-2xl">
+        About Us
+      </h1>
+      <div class="w-24 h-1 bg-amber-400 mx-auto mt-4 rounded-full"></div>
+      <p class="text-white/90 text-lg md:text-xl mt-6 max-w-2xl mx-auto font-light">
+        Crafting tomorrow’s experiences, today
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. Future Events Exhibition company details (clean & modern) -->
+  <section class="py-16 md:py-24 px-4 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Left column: company intro + description -->
+      <div>
+        <span class="text-amber-600 font-semibold text-sm tracking-widest uppercase">Who we are</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-3 mb-6">
+          Future Events <span class="text-amber-500">Exhibition</span>
+        </h2>
+        <div class="prose prose-lg text-gray-600 space-y-5">
+          <p>
+            Future Events Exhibition is a premier global exhibition organizer dedicated to 
+            bringing together innovators, industry leaders, and visionaries under one roof. 
+            With over a decade of experience, we craft immersive experiences that shape the 
+            way people connect, learn, and do business.
+          </p>
+          <p>
+            Our exhibitions span technology, design, sustainability, and lifestyle – always 
+            focusing on what’s next. We believe that great events are more than just dates on 
+            a calendar; they are catalysts for change, collaboration, and growth.
+          </p>
+          <p>
+            Headquartered in the heart of innovation, our team works tirelessly to ensure 
+            every detail reflects excellence, from venue selection to attendee engagement.
+          </p>
+        </div>
+        <!-- quick stats / highlights (optional) -->
+        <div class="grid grid-cols-3 gap-4 mt-8">
+          <div class="text-center">
+            <span class="block text-3xl font-bold text-amber-500">150+</span>
+            <span class="text-sm text-gray-500">Exhibitions</span>
+          </div>
+          <div class="text-center">
+            <span class="block text-3xl font-bold text-amber-500">12k</span>
+            <span class="text-sm text-gray-500">Exhibitors</span>
+          </div>
+          <div class="text-center">
+            <span class="block text-3xl font-bold text-amber-500">80k</span>
+            <span class="text-sm text-gray-500">Attendees</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right column: company details in card style (address, contact, mission) -->
+      <div class="bg-gray-50 p-8 rounded-2xl shadow-md border border-gray-100">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center gap-2">
+          <span class="w-1.5 h-6 bg-amber-400 rounded-full"></span>
+          Company details
+        </h3>
+        
+        <div class="space-y-6">
+          <!-- detail item -->
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-medium text-gray-800">Headquarters</p>
+              <p class="text-gray-600">345 Future Boulevard, Silicon Oasis, CA 94025, United States</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-medium text-gray-800">Email & Phone</p>
+              <p class="text-gray-600">hello@futureevents.com<br>+1 (650) 555‑0199</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-medium text-gray-800">Founded</p>
+              <p class="text-gray-600">2010 · 15+ years of excellence</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <p class="font-medium text-gray-800">Our mission</p>
+              <p class="text-gray-600">To connect the world through meaningful, forward‑thinking events that inspire progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- social / extra link (optional) -->
+        <div class="mt-8 pt-6 border-t border-gray-200">
+          <p class="text-sm text-gray-500 flex items-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+            <span>Follow us: @futureevents (LinkedIn, Twitter, Instagram)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- extra line: future events / upcoming exhibition (just for more context) -->
+    <div class="mt-16 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <span class="text-xs font-semibold text-amber-700 uppercase tracking-wider">next event</span>
+        <h4 class="text-lg font-bold text-gray-800">FutureTech Expo 2025</h4>
+        <p class="text-gray-600">October 12–14, Moscone Center, San Francisco</p>
+      </div>
+      <a href="#" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-6 py-3 rounded-lg transition shadow-sm whitespace-nowrap">
+        Get your pass
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+       <!-- Footer Section Section -->
+         <footer class="bg-cyan-500 py-[40px] px-[40px]">
+            <div class="footer-area container mx-auto">
+                <div class="footer-items grid grid-cols-1 md:grid-cols-4 gap-[30px]">
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Future Events & Exhibitions Pvt. Ltd.</h3>
+                    <ul class="ml-3">
+                        <li><i class="fa-solid fa-location-dot"></i> 292 Inner Circular Road, Shatabdi Center, Room#F5 (1st Fl.) Fakirapool, Motijheel, Dhaka-1000. Bangladesh</li>
+                        <li><i class="fa-solid fa-globe"></i> futureeventsbd.com</li>
+                        <li><i class="fa-solid fa-phone-volume"></i> 01715-853909</li>
+                        <li><i class="fa-solid fa-envelope"></i> future.exhibitions@yahoo.com</li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Our Services</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Exhibition & Event Management</a></li>
+                        <li><a href="#">Conference & Seminar Arrangement</a></li>
+                        <li><a href="#">Interior Design & Booth Fabrication</a></li>
+                        <li><a href="#">Exhibition Logistic Supply</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Footer Menu</h3>
+                    <ul class="ml-3 list-disc">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                   </div>
+                   <div class="footer-cont text-white">
+                         <h3 class="text-[20px] font-semibold mb-[15px]">Social Links</h3>
+                    <ul class="social-link flex gap-4">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+         </footer>
+
+      <!-- Swiper JS -->
+       <script src="./js/swiper-bundle.js"></script>
+        <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
