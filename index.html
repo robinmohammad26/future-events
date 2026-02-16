@@ -24,30 +24,42 @@
 <body>
     <!-- Header Area Design -->
      <header>
-        <nav class="navbar container mx-auto">
-            <!-- logo (always visible) -->
-            <a href="#" class="logo" aria-label="Brand home">
+    <nav class="navbar container mx-auto">
+        <!-- logo (always visible) -->
+        <a href="#" class="logo" aria-label="Brand home">
             <img src="./images/logo.png" alt="">
-            </a>
+        </a>
 
-            <!-- hidden checkbox controls the menu -->
-            <input type="checkbox" id="menu-toggle">
-            
-            <!-- hamburger label (linked to checkbox) -->
-            <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
+        <!-- hidden checkbox controls the menu -->
+        <input type="checkbox" id="menu-toggle">
+        
+        <!-- hamburger label (linked to checkbox) -->
+        <label for="menu-toggle" class="hamburger" aria-label="toggle menu">
             <i class="fas fa-bars"></i>
-            </label>
+        </label>
 
-            <!-- navigation links -->
-            <ul class="nav-menu">
+        <!-- navigation links -->
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
+            
+            <!-- Services with submenu -->
+            <li class="has-submenu">
+                <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                <!-- Submenu -->
+                <ul class="submenu space-y-4 p-4">
+                    <li><a href="web-design.html">Web Design</a></li>
+                    <li><a href="web-development.html">Web Development</a></li>
+                    <li><a href="seo.html">SEO Optimization</a></li>
+                    <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                </ul>
+            </li>
+            
             <li><a href="about.html">About Us</a></li>
             <li><a href="our-team.html">Our Team</a></li>
             <li><a href="contact.html" class="cta-link">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
      <!-- Banner Section Design -->
       <div class="swiper mySwiper">
         <div class="wrapper swiper-wrapper">
